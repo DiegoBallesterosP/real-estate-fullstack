@@ -1,0 +1,12 @@
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\bin\Debug\net9.0\RealEstate.Domain.deps.json
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\bin\Debug\net9.0\RealEstate.Domain.dll
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\bin\Debug\net9.0\RealEstate.Domain.pdb
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.AssemblyInfoInputs.cache
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.AssemblyInfo.cs
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.csproj.CoreCompileInputs.cache
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.dll
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\refint\RealEstate.Domain.dll
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.pdb
+c:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\ref\RealEstate.Domain.dll
+C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Domain\obj\Debug\net9.0\RealEstate.Domain.csproj.AssemblyReference.cache
