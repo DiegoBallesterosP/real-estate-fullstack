@@ -5,7 +5,6 @@ import Owners from "./pages/Owners";
 
 export default function App() {
   return (
-    // Fondo global blanco, fuente sans, texto gris neutro
     <div className="min-h-screen bg-white font-sans text-gray-900">
       <BrowserRouter>
         <Navbar />

@@ -1,12 +1,11 @@
-// src/services/propertyService.ts
 import { API_BASE_URL } from "../utils/config";
-import { PropertyDto } from "types";
+import { PropertyDto, FilterDto } from "types";
 
-export async function getProperties(filters?: Record<string, any>): Promise<PropertyDto[]> {
+export async function getProperties(filters?: FilterDto): Promise<PropertyDto[]> {
     const params = new URLSearchParams();
 
-    if (filters?.name) params.append("name", filters.name);
-    if (filters?.address) params.append("address", filters.address);
+    if (filters?.name) params.append("name", filters.name.toLowerCase());
+    if (filters?.address) params.append("address", filters.address.toLowerCase());
     if (filters?.minPrice) params.append("minPrice", String(filters.minPrice));
     if (filters?.maxPrice) params.append("maxPrice", String(filters.maxPrice));
 
@@ -18,7 +17,10 @@ export async function getProperties(filters?: Record<string, any>): Promise<Prop
     console.log("GET →", url);
 
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Error ${res.status}: ${res.statusText}`);
+    if (!res.ok) {
+        const errorText = await res.text();
+        throw new Error(`Error ${res.status}: ${errorText || res.statusText}`);
+    }
     return res.json();
 }
 
@@ -27,6 +29,9 @@ export async function getPropertyById(id: string): Promise<PropertyDto> {
     console.log("GET →", url);
 
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`Error ${res.status}: ${res.statusText}`);
+    if (!res.ok) {
+        const errorText = await res.text();
+        throw new Error(`Error ${res.status}: ${errorText || res.statusText}`);
+    }
     return res.json();
 }

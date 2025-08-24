@@ -1,4 +1,3 @@
-// src/pages/Owners.tsx
 import React, { useEffect, useState } from "react";
 import { getOwners } from "../services/ownerService";
 import { OwnerDto } from "types";

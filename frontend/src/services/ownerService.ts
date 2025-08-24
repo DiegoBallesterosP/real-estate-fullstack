@@ -1,4 +1,3 @@
-// src/services/ownerService.ts
 import { API_BASE_URL } from "../utils/config";
 import { OwnerDto } from "types";
 

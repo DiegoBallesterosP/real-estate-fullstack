@@ -6,12 +6,12 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="bg-white shadow-md sticky top-0 z-50">
-            <div className="container mx-auto px-4 py-4 flex items-center justify-between relative">
+            <div className="container mx-auto px-4 py-4 flex items-center justify-between relative max-w-6xl">
                 <Link
                     to="/"
                     className="text-2xl font-extrabold tracking-tight text-blue-700"
                 >
-                    Home
+                    Million
                 </Link>
 
                 <button
@@ -44,9 +44,23 @@ const Navbar: React.FC = () => {
 
                 <div
                     className={`absolute md:static top-full left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none transition-all duration-300 ${isOpen ? "block" : "hidden"
-                        } md:flex md:items-center md:gap-6`}
+                        } md:flex md:items-center`}
                 >
-                    <ul className="flex flex-col md:flex-row gap-4 px-4 py-4 md:p-0 text-lg font-medium md:absolute md:left-1/2 md:-translate-x-1/2">
+                    <ul className="flex flex-col md:flex-row gap-6 px-4 py-4 md:p-0 text-lg font-medium md:absolute md:left-1/2 md:-translate-x-1/2">
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    `hover:text-blue-600 transition-colors ${isActive
+                                        ? "text-blue-600"
+                                        : "text-gray-700"
+                                    }`
+                                }
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Home
+                            </NavLink>
+                        </li>
                         <li>
                             <NavLink
                                 to="/owners"
@@ -56,6 +70,7 @@ const Navbar: React.FC = () => {
                                         : "text-gray-700"
                                     }`
                                 }
+                                onClick={() => setIsOpen(false)}
                             >
                                 Owners
                             </NavLink>
