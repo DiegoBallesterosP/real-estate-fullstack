@@ -38,13 +38,5 @@ namespace RealEstate.Infrastructure.Repositories
         public async Task<Property?> GetByIdAsync(string id) =>
             await _properties.Find(p => p.Id == id).FirstOrDefaultAsync();
 
-        public async Task AddAsync(Property property) =>
-            await _properties.InsertOneAsync(property);
-
-        public async Task UpdateAsync(Property property) =>
-            await _properties.ReplaceOneAsync(p => p.Id == property.Id, property);
-
-        public async Task DeleteAsync(string id) =>
-            await _properties.DeleteOneAsync(p => p.Id == id);
     }
 }

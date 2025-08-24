@@ -1,4 +1,3 @@
-using RealEstate.Application.DTOs;
 using RealEstate.Application.Mappers;
 using RealEstate.Domain.Repositories;
 

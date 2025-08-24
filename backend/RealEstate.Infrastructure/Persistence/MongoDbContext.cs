@@ -15,5 +15,6 @@ namespace RealEstate.Infrastructure.Persistence
 
         public IMongoCollection<Property> Properties => _database.GetCollection<Property>("Property");
         public IMongoCollection<Owner> Owners => _database.GetCollection<Owner>("Owner");
+        public IMongoDatabase Database => _database;
     }
 }

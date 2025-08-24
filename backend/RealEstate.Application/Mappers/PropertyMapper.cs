@@ -1,4 +1,3 @@
-using RealEstate.Application.DTOs;
 using RealEstate.Domain.Entities;
 
 namespace RealEstate.Application.Mappers
@@ -14,9 +13,20 @@ namespace RealEstate.Application.Mappers
                 Name = property.Name,
                 Address = property.Address,
                 Price = property.Price,
-                Image = property.Images.FirstOrDefault(i => i.Enabled)?.File
+                Image = property.Images.FirstOrDefault(i => i.Enabled)?.File,
+                Traces = (property.Traces ?? new List<PropertyTrace>())
+                    .Select(t => new PropertyTraceDto
+                    {
+                        Id = t.Id,
+                        DateSale = t.DateSale,
+                        Name = t.Name,
+                        Value = t.Value,
+                        Tax = t.Tax
+                    })
+                    .ToList()
             };
         }
+
 
         public static Property ToEntity(PropertyDto dto)
         {

@@ -1,6 +1,5 @@
-using RealEstate.Domain.Repositories;
 using RealEstate.Application.Mappers;
-using RealEstate.Application.DTOs;
+using RealEstate.Domain.Repositories;
 
 public class GetPropertiesUseCase
 {
@@ -11,10 +10,14 @@ public class GetPropertiesUseCase
         _propertyRepository = propertyRepository;
     }
 
-    public async Task<IEnumerable<PropertyDto>> ExecuteAsync(PropertyFilterDto filter)
+    public async Task<IEnumerable<PropertyDto>> ExecuteAsync(PropertyFilterDto? filter)
     {
         var properties = await _propertyRepository.GetFilteredAsync(
-            filter.Name, filter.Address, filter.MinPrice, filter.MaxPrice);
+            filter?.Name,
+            filter?.Address,
+            filter?.MinPrice,
+            filter?.MaxPrice
+        );
 
         return properties.Select(PropertyMapper.ToDto);
     }

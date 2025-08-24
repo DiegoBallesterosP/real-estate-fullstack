@@ -19,14 +19,5 @@ namespace RealEstate.Infrastructure.Repositories
 
         public async Task<IEnumerable<Owner>> GetAllAsync() =>
             await _owners.Find(_ => true).ToListAsync();
-
-        public async Task AddAsync(Owner owner) =>
-            await _owners.InsertOneAsync(owner);
-
-        public async Task UpdateAsync(Owner owner) =>
-            await _owners.ReplaceOneAsync(o => o.Id == owner.Id, owner);
-
-        public async Task DeleteAsync(string id) =>
-            await _owners.DeleteOneAsync(o => o.Id == id);
     }
 }

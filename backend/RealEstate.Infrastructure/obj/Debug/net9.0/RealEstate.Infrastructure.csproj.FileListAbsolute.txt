@@ -10,6 +10,7 @@ C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\o
 C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\RealEstate.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\RealEstate.Infrastructure.AssemblyInfo.cs
 C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\RealEstate.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\RealEstate.Infrastructure.sourcelink.json
 C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\RealEsta.54FC12BD.Up2Date
 C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\RealEstate.Infrastructure.dll
 C:\Users\diego\Desktop\real-estate-fullstack\backend\RealEstate.Infrastructure\obj\Debug\net9.0\refint\RealEstate.Infrastructure.dll
